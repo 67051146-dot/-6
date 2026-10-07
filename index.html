@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- เชื่อม CSS -->
+    <link rel="stylesheet" href="E.css" />
+    <script src="V.js" defer></script>
+    <title>พลังงานไฮโดรเจน</title>
+</head>
+
+<body>
+  <canvas id="magic-canvas" aria-hidden="true"></canvas>
+  <main id="scene">
+    <div id="book" role="group" aria-label="หนังสือพลังงานไฮโดรเจน">
+      <div id="book-aura" aria-hidden="true"></div>
+      <div class="board back-cover" aria-label="ปกหลัง">
+        <img src="L.png" alt="" onerror="this.hidden=true">
+      </div>
+
+      <!-- หน้า 16-17 -->
+     <article class="sheet" id="leaf-6">
+       <div class="face front image-page">
+         <img src="J.png" alt="หน้า 17">
+       </div>
+       <div class="face back image-page">
+         <img src="K.png" alt="หน้า 16">
+       </div>
+     </article>
+
+     <!-- หน้า 14-15 -->
+     <article class="sheet" id="leaf-6">
+       <div class="face front gif-page">
+         <img
+           class="floating-gif"
+           src="results.gif"
+           alt="ภาพเคลื่อนไหวบ้าน"
+          >
+       </div>
+       <div class="face back image-page">
+         <img src="I.png" alt="หน้า 14">
+       </div>
+     </article>
+
+      <!-- หน้า 12-13 -->
+     <article class="sheet" id="leaf-6">
+       <div class="face front gif-page">
+         <img
+           class="floating-gif"
+           src="solar.gif"
+           alt="ภาพเคลื่อนไหวบ้าน"
+          >
+       </div>
+       <div class="face back image-page">
+         <img src="H.png" alt="หน้า 12">
+       </div>
+     </article>
+
+      <!-- หน้า 10–11 -->
+     <article class="sheet" id="leaf-5">
+       <div class="face front gif-page">
+         <img
+           class="floating-gif"
+           src="fuelcell.gif"
+           alt="ภาพเคลื่อนไหวเซลล์"
+          >
+       </div>
+       <div class="face back image-page">
+         <img src="G.png" alt="หน้า 11">
+       </div>
+     </article>
+
+      <!-- หน้า 8–9 -->
+     <article class="sheet" id="leaf-4">
+       <div class="face front video-page">
+         <h2>พลังงานไฮโดรเจน</h2>
+
+         <video controls playsinline preload="metadata">
+           <source src="hydrogen.mp4" type="video/mp4">
+           เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
+         </video>
+       </div>
+       <div class="face back image-page">
+         <img src="F.png" alt="หน้า 9">
+       </div>
+      </article>
+
+      <!-- หน้า 6–7 -->
+     <article class="sheet" id="leaf-3">
+       <div class="face front gif-page">
+         <img
+           class="floating-gif"
+           src="spinning.gif"
+            alt="ภาพเคลื่อนไหวกังหัน"
+          >
+        </div>
+       <div class="face back image-page">
+         <img src="E.png" alt="หน้า 7">
+       </div>
+      </article>
+
+      <!-- หน้า 4–5 -->
+      <article class="sheet" id="leaf-2">
+       <div class="face front video-page">
+         <video controls playsinline preload="metadata">
+           <source src="green.mp4" type="video/mp4">
+           เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
+         </video>
+       </div>
+       <div class="face back image-page">
+         <img src="D.png" alt="หน้า 5">
+        </div>
+      </article>
+
+      <article class="sheet" id="leaf-1">
+        <div class="face front gif-page">
+         <img
+           class="floating-gif"
+           src="Carbon.gif"
+            alt="ภาพเคลื่อนไหวโรงงาน"
+          >
+        </div>
+        
+        <div class="face back image-page">
+         <img src="C.png" alt="หน้า 3">
+        </div>
+        
+      </article>
+      <article class="sheet" id="leaf-0">
+        <div class="face front cover">
+          <img src="A.png" alt="ปกหน้า">
+       </div>
+
+       <div class="face back image-page">
+         <img src="B.png" alt="หน้า 1">
+       </div>
+      </article>
+    </div>
+  </main>
+  <p id="reading-hint">คลิกด้านขวาเพื่อพลิกหน้า · คลิกด้านซ้ายเพื่อย้อนกลับ</p>
+  <p id="page-status" class="sr-only" aria-live="polite">หน้าปก</p>
+</body>
+</html>
